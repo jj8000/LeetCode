@@ -8,15 +8,6 @@
 # Given the integer array fruits, return the maximum number of fruits you can pick.
 import collections
 
-#
-# class Solution:
-#     def totalFruit(self, fruits: list[int]) -> int:
-#         window_size = 3
-#         max_fruits = 1
-
-fruits = [1, 2, 2, 1, 3, 4, 5, 6, 7, 8, 6, 5]
-
-
 
 # def totalFruit(fruits: list[int]) -> int:
 #     max_fruits = 0
@@ -58,8 +49,6 @@ fruits = [1, 2, 2, 1, 3, 4, 5, 6, 7, 8, 6, 5]
 #     return max_fruits
 
 
-fruits = [1, 1, 1, 1, 3, 4, 1, 2, 1]
-# print(fruits)
 def totalFruit(fruits: list[int]) -> int:
     if len(set(fruits)) <= 2:
         return len(fruits)
@@ -83,12 +72,10 @@ def totalFruit(fruits: list[int]) -> int:
     return max_fruits
 
 
-print(totalFruit(fruits))
 
 
 
-
-# nieefektywny algorytm:
+# Slow algorythm:
 
 import re
 
@@ -130,8 +117,4 @@ import re
 # # return most_fruits
 
 
-# print(s.totalFruit([1,0,1,4,1,4,1,2,3]))
 
-
-# print(fruit_pairs)
-# for a, b in fruit_pairs:

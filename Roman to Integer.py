@@ -1,5 +1,3 @@
-s = "MMMCI"
-
 
 def RomanToInt(s: str) -> int:
     s_list = [num for num in s]
